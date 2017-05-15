@@ -31,6 +31,11 @@ config(function($stateProvider) {
             parent: 'detail',
             templateUrl: 'PokemonDetail/PokemonDetailEdit.html',
             controller: function() {}
+        }).state({
+            name: 'myaccount',
+            url: '/myaccount',
+            templateUrl: 'MyAccount/MyAccount.html',
+            controller: function() {}
         });
 })
 
@@ -41,5 +46,8 @@ config(function($stateProvider) {
 					}, {
 						label: "Добавить нового",
 						href: "createNewPokemon"
+					}, {
+						label: "Мой аккаунт",
+						href: "myaccount"
 					}];
 });
