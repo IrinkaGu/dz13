@@ -8,7 +8,8 @@ angular
     vm.account = AccountStore.getAccount();
 
     vm.saveAccount = function(account) {
-        console.log(account);
+        AccountStore.saveAccount(account);
+		console.log(account);
     };
 	
     vm.reset = function () {

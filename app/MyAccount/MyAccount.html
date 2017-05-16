@@ -7,7 +7,7 @@
     }
 </style>
 
-<div ng-if="vm.isSaved()">
+<div ng-if="vm.isSave()">
     <p>Имя:      {{vm.account.name}}</p>
     <p>Email:    {{vm.account.email}}</p>
     <p>Телефон:  {{vm.account.phone}}</p>
@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<form name="vm.accountForm" novalidate ng-if="!vm.isSaved()">
+<form name="vm.accountForm" novalidate ng-if="!vm.isSave()">
     <div class="form-group">
         <label>Имя</label>
         <input class="form-control" data-ng-model="vm.account.name" type="text" placeholder="Имя" required ng-minlength="3" name="accountName">

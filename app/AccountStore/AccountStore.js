@@ -7,7 +7,7 @@ angular
         let account = {};
         return {
             getAccount()  {
-                return account;
+                return Object.assign({}, account);
             },
             saveAccount(item) {
                 account = item;
